@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  background-color: #f4f7f6;
+  text-decoration: none; }
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between; }
+  header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 115px;
+    background-color: #f4f7f6;
+    text-align: center;
+    border: 1px solid #E6EAEA;
+    padding: 0 10px; }
+  header .menu p {
+    text-transform: uppercase;
+    line-height: 73px;
+    font-size: 13px;
+    font-family: helvetica; }
+  header .logo {
+    font-size: 20px;
+    font-weight: bold; }
+  header .submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    text-transform: uppercase;
+    line-height: 73px;
+    font-size: 13px;
+    font-family: helvetica;
+    background-color: #49c5b6;
+    text-align: center;
+    border: 1px solid #E6EAEA;
+    padding: 0 10px;
+    color: white; }
+
+.nav-top {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #E6EAEA;
+  align-items: center; }
+  .nav-top p {
+    font-weight: bold;
+    padding: 10px;
+    height: 100%; }
+  .nav-top button {
+    background-color: #f4f7f6;
+    text-align: center;
+    border: 1px solid #E6EAEA;
+    padding: 0 10px;
+    text-transform: uppercase;
+    line-height: 73px;
+    font-size: 13px;
+    font-family: helvetica; }
+  .nav-top .contries {
+    border-right: none; }
+  .nav-top .glyph-menu a {
+    color: orange; }
+
+.sites {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0 35px;
+  margin-top: 20px; }
+  .sites .web-card {
+    flex: 1 0 auto;
+    padding: 0 0 35px 35px; }
+    .sites .web-card img {
+      width: 100%; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: "apercu",sans-serif;
+  padding: 30px;
+  background-color: #fcfcfc; }
+  footer a {
+    text-decoration: none;
+    color: black; }
+  footer .conference, footer .footer-misc {
+    font-size: 18px; }
+  footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0; }
+  footer .social-media a {
+    margin: 0 3px; }
+
+@media screen and (max-width: 468px) {
+  .sites {
+    padding: 0 23px;
+    flex-direction: column; }
+    .sites .web-card {
+      max-width: 100%;
+      padding: 0 0 23px 0; } }
+@media screen and (max-width: 557px) and (min-width: 469px) {
+  .sites {
+    padding: 0 30px; }
+    .sites .web-card {
+      max-width: 80vw;
+      padding: 0 0 30px 0; } }
+@media screen and (max-width: 1009px) and (min-width: 558px) {
+  .web-card {
+    max-width: 35vw;
+    padding: 0 0 30px 0; } }
+@media screen and (min-width: 1010px) and (max-width: 1465px) {
+  .web-card {
+    max-width: 29%; }
+
+  .conference {
+    align-self: flex-end;
+    margin-bottom: -50px; } }
+@media screen and (min-width: 1466px) {
+  .web-card {
+    max-width: 20%; }
+
+  .conference {
+    align-self: flex-end;
+    margin-bottom: -50px; } }
+
+/*# sourceMappingURL=output.css.map */
